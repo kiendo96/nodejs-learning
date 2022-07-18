@@ -31,8 +31,6 @@ export const deleteProduct = async (req, res) => {
     } catch (error) {
         res.status(400).json({message: "khong the xoa san pham"})
     }
-    // const  prod = products.filter(item => item.id != +req.params.id)
-    // res.json(prod)
 }
 export const updateDelete = async (req, res) => {
     try {
@@ -41,5 +39,4 @@ export const updateDelete = async (req, res) => {
     } catch (error) {
         res.status(400).json({message: "khong cap nhap duoc san pham"})
     }
-    // res.json(products.map(item => item.id === +req.params.id ? req.body : item))
 }
